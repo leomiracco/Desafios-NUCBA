@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root{
+  --fuentePrincipal: 'Spartan', sans-serif;
+  --colorTarjetas: hsl(300, 43%, 22%);
+  --colorSubTitulosTarjetas: hsl(333, 80%, 67%);
+  --colorTitulosTarjetas: hsl(300, 24%, 96%);
+  --colorFondoEstrellas: hsl(303, 10%, 53%);
+}
+
+.containerPrincipal{
+  width: 100vw;
+  min-height: 100vh;
+
+  /*background-color: hsl(257, 40%, 49%);*/
+  background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+  /* background-repeat: no-repeat; */
+}
+
+.dosSecciones{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
+  gap: 20px;
+  color: var(--colorTitulosTarjetas);
+  font-family: var(--fuentePrincipal);
+}
+
+.seccionTituloConEstrellas{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.subContainerTituloParrafo{
+  padding: 30px 11% 20px 8%;
+}
+
+.subContainerTituloParrafo h1{
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--colorTarjetas);
+}
+
+.subContainerTituloParrafo p{
+  font-size: 18px;
+  line-height: 28px;
+  color: hsl(303, 10%, 53%);
+}
+
+.subContainerEstrellas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 8px;
+  font-weight: 700;
+}
+
+.rate{
+  width: 65%;
+  display: flex;
+  align-items: center;
+  background-color: hsl(310, 17%, 93%);
+  height: 60px;
+  border-radius: 10px;
+  padding-left: 7%;
+}
+
+.rate img{
+  width: 20px;
+}
+
+.rt2{
+  margin-left: 6%;
+}
+
+.rt3{
+  width: 64%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 13%;
+}
+
+.starsText{
+  font-weight: 700;
+  color: var(--colorTarjetas);
+}
+
+.estrellas{
+  margin: 0px 20% 0px 0px;
+  letter-spacing: 6px;
+}
+
+.seccionTarjetas{
+  padding: 0px 4% 0px 4%;
+}
+
+.tresTarjetas{
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colorTarjetas);
+  padding: 6%;
+  line-height: 27px;
+  border-radius: 10px;
+}
+
+.spanSubTituloTarjeta{
+  color: var(--colorSubTitulosTarjetas);
+}
+
+.tarjeta2{
+  margin-top: 20px;
+}
+
+.tarjeta3{
+  margin-top: 40px;
+}
+
+.containerImg img{
+  border-radius: 50%;
+}
+
+.containerImgTitulos{
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.containerTitulos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+  line-height: 25px;
+}
+
+.attribution{
+  margin-top: 20px;
+  text-align: center;
+}
+
+/**** Media Query *********************************/
+/**************************************************/
+
+@media only screen and (max-width: 1868px){
+  
+  .tresTarjetas{
+    height: 290px;
+  }
+}
+
+@media only screen and (max-width: 1706px){
+  
+  .rate{
+    width: 77%;
+  }
+
+  .estrellas{
+    margin: 0px 12% 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 1465px){
+  
+ .tresTarjetas{
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 1417px){
+  
+  .rate{
+    width: 78%;
+  }
+
+  .estrellas{
+    margin: 0px 9% 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 1266px){
+  
+  .tresTarjetas{
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 1244px){
+  
+  .estrellas{
+    margin: 0px 6% 0px 0px;
+  }
+
+  .rate{
+    padding-left: 2%;
+  }
+}
+
+@media only screen and (max-width: 1130px){
+  
+  .seccionTarjetas{
+    grid-template-columns: repeat(auto-fit, minmax(333px, 1fr));
+    grid-auto-rows: 350px;
+  }
+
+  .tarjeta3{
+    margin-top: 0px;
+  }
+
+  .parrafoTextoTarjeta{
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 1115px){
+  
+  .rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 95px;
+  }
+  
+  .rt2{
+    margin-left: 0%;
+  }
+  
+  .rt3{
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 838px){
+  
+  .seccionTituloConEstrellas{
+    margin-top: 0px;
+  }
+  
+  .seccionTarjetas{
+    grid-auto-rows: 370px;
+  }
+
+  .tresTarjetas{
+    height: 370px;
+  }
+}
+
+@media only screen and (max-width: 747px){
+  
+  .seccionTarjetas{
+    grid-auto-rows: 350px;
+  }
+
+  .tresTarjetas{
+    height: 340px;
+  }
+
+  .tarjeta2{
+    margin-top: 0px;
+  }
+
+  .parrafoTextoTarjeta{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 679px){
+
+  .seccionTituloConEstrellas{
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+
+  .subContainerTituloParrafo{
+    padding: 30px 8% 20px 8%;
+  }
+
+  .subContainerEstrellas{
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  .rt1{
+    margin-bottom: 20px;
+  }
+
+  .rt2{
+    margin-bottom: 20px;
+  }
+
+  .tarjeta2{
+    margin-top: 0px;
+  }
+
+  .parrafoTextoTarjeta{
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 409px){
+  
+  .tresTarjetas{
+    padding: 30px 4% 30px 4%;
+  }
+  
+  .seccionTarjetas{
+    grid-auto-rows: 370px;
+  }
+
+  .tresTarjetas{
+    height: 370px;
+  }
+}
+
+@media only screen and (max-width: 364px){
+  
+  .dosSecciones{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .seccionTarjetas{
+    grid-auto-rows: 390px;
+  }
+
+  .tresTarjetas{
+    height: 390px;
+  }
+
+  .parrafoTextoTarjeta{
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 329px){
+  
+  .rate{
+    width: 90%;
+  }
+
+  .seccionTarjetas{
+    grid-auto-rows: 410px;
+  }
+
+  .tresTarjetas{
+    height: 410px;
+  }
+
+  .parrafoTextoTarjeta{
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 288px){
+  
+  .dosSecciones{
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
+  .subContainerTituloParrafo h1{
+    font-size: 35px;
+  }
+  
+  .seccionTarjetas{
+    grid-auto-rows: 440px;
+  }
+
+  .tresTarjetas{
+    height: 440px;
+  }
+  
+  .starsText{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 240px){
+  
+  .seccionTarjetas{
+    grid-auto-rows: 500px;
+  }
+
+  .tresTarjetas{
+    height: 500px;
+  }
+  
+  .starsText{
+    text-align: center;
+  }
+}
