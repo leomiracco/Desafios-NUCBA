@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --fuente1: 'Kumbh Sans',  sans-serif;
+  }
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  z-index: -4; 
+  position: absolute;
+  overflow: hidden; 
+
+  /* display: flex;
+  flex-direction: column;*/
+  /* justify-content: center; */
+  /*align-items: center;*/
+
+  background: var(--dark-cyan);
+  /* background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg"); */
+  /* background-repeat: no-repeat, no-repeat; */
+  /* background-position: left 41vh top -3vh, right 44vh bottom -7vh; */
+}
+
+.containerImgTop{
+  position: absolute;
+  top: -550px;
+  left: -600px;
+  width: 800px;
+  height: 800px;
+  
+  z-index: -3;
+}
+
+.containerImgTop img{
+  width: 100%;
+}
+
+.containerImgBottom{
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  bottom: -600px;
+  right: -600px;
+  
+  z-index: -2;
+}
+
+.containerImgBottom img{
+  width: 100%;
+}
+
+.divTarjeta{
+  position: relative;
+  /* z-index: 3; */
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+
+  /* display: flex;
+  flex-direction: column; */
+  
+  /* margin-bottom: 20px; */
+  font-size: 18px;
+  font-family: var(--fuente1);
+}
+
+.divImagenFondoAgua{
+  width: 100%;
+  height: 33%;
+  display: flex; /* este flex se utiliza para que
+  la imagen tome todo el ALTO también del div */
+
+  /* overflow: hidden; */
+  
+}
+
+.imagenFondoAgua{
+  width: 100%;
+  border-radius: 35px 35px 0px 0px;
+}
+
+.divDatosPersonales{
+  width: 100%;
+  height: 67%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  
+  border-radius: 0px 0px 35px 35px;
+}
+
+.imagenVictor{
+  min-width: 120px;
+  width: 25%;
+  margin-top: -60px;
+  border-radius: 50%;
+  background-color: white;
+  border: 4px solid white;
+  margin-bottom: 10px;
+}
+
+.nombreLugar{
+  font-size: 34px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.nombreLugar h3{
+  margin-bottom: 10px;
+}
+
+.spanNombreVictor{
+  margin-right: 6%;
+}
+
+.span26{
+  color: rgb(134, 130, 130);
+}
+
+.london{
+  color: rgb(134, 130, 130);
+}
+
+.redesSociales{
+  font-size: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid rgb(226, 222, 222);
+  padding: 25px 9% 25px 9%;
+}
+
+.redes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spanStats{
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.spanNombresStats{
+  color: rgb(134, 130, 130);
+  font-size: 29px;
+}
+
+.attribution {
+  position: absolute;
+  width: 550px;
+  bottom: -60px;
+  right: -25px;
+  font-size: 24px;
+  text-align: center;
+  z-index: -1;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/******************  Media query ***************/
+
+@media only screen and (max-width: 552px){
+
+  .divTarjeta{
+    width: 330px;
+    height: 400px;
+  }
+
+  .imagenVictor{
+    margin-bottom: 20px;
+  }
+
+  .nombreLugar{
+    font-size: 17px;
+    margin-bottom: 40px;
+  }
+
+  .redesSociales{
+    font-size: 21px;
+    padding: 0px 9% 0px 9%;
+  }
+
+  .spanNombresStats{
+    font-size: 15px;
+  }
+
+  .attribution {
+    width: 540px;
+    bottom: -44px;
+    right: -105px;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 368px){
+
+  .attribution {
+    font-size: 15px;
+  }
+}
