@@ -167,6 +167,13 @@
   }
 }
 
+@media only screen and (max-width: 1440px){
+
+  .container{
+    background-position: left -21vh top -46vh, right -24vh bottom -48vh;
+  }
+}
+
 @media only screen and (max-width: 1280px){
 
   .container{
