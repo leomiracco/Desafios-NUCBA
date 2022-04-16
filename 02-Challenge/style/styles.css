@@ -29,7 +29,6 @@ body{
   background-position: -87rem -50rem, 14rem -7rem;
   background-repeat: no-repeat, no-repeat;
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
   left: 0;
   position: absolute;
@@ -113,7 +112,7 @@ body{
 }
 @media only screen and (min-width: 2560px) and (orientation: landscape){
   .background-img-container{
-    background-position: 13rem -17rem, 115rem 64rem;
+    background-position: 27rem -17rem, 126rem 67rem;
   }
 }
 @media only screen and (min-width: 3070px) and (orientation: landscape){
@@ -125,6 +124,7 @@ body{
 .main{
   align-items: center;
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   justify-content: center;
   left: 0;
@@ -139,17 +139,22 @@ body{
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 5rem 1rem;
-  width: 40rem;
+  margin: 5rem 0rem 1rem 0rem;
+  width: 90%;
 }
-@media only screen and (min-width: 375px) and (min-height: 600px){
+@media only screen and (min-width: 400px) and (min-height: 700px){
   .card-section {
-    margin: 0rem 1.5rem;
+    width: 85%;
   }
 }
-@media only screen and (min-width: 320px) and (orientation: landscape){
+@media only screen and (min-width: 600px) and (min-height: 800px){
   .card-section {
-    margin: 5rem 2rem;
+    width: 40rem;
+  }
+}
+@media only screen and (min-width: 480px) and (orientation: landscape){
+  .card-section {
+    width: 40rem;
   }
 }
 
@@ -299,6 +304,6 @@ body{
   font-size: 1.5rem;
   line-height: 1.7;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
