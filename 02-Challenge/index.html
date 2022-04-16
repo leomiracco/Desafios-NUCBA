@@ -1,64 +1,63 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Profile card component</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style/styles.css" />
+    <title>Victor Crest</title>
+  </head>
+  <body>
 
-<body> 
-  <div class="container">
-        
-    
-    <div class="divTarjeta">
-      
-      <div class="divImagenFondoAgua">
-        <img class="imagenFondoAgua" src="./images/bg-pattern-card.svg" alt="fondo estilo agua">
-      </div>
+    <div class="background-img-container">
 
-      <div class="divDatosPersonales">
+      <main class="main">
 
-        <img class="imagenVictor" src="./images/image-victor.jpg" alt="">
+        <section class="card-section">
 
-        <div class="nombreLugar">
-          <h3 class="nombreH3">
-            <span class="spanNombreVictor">Victor Crest</span><span class="span26">26</span>
-          </h3>
-          
-          <span class="london">London</span>
-          
-        </div>
-
-        <div class="redesSociales">
-          <div class="redes seguidores">
-            <span class="spanStats span803K">80K</span>
-            <span class="spanNombresStats">Followers</span>
+          <div class="top-image-container">
+            <img src="../images/bg-pattern-card.svg" alt="" />
           </div>
-          <div class=" redes likes">
-            <span class="spanStats span803K">803K</span>
-            <span class="spanNombresStats">Likes</span>
+
+          <div class="portrait-container">
+            <img src="./images/image-victor.jpg" alt="" />
           </div>
-          <div class="redes photos">
-            <span class="spanStats span1K">1.4K</span>
-            <span class="spanNombresStats">Photos</span>
+
+          <div class="data-container">
+            <div class="name-container">
+              <h1>Victor Crest <span>26</span></h1>
+            </div>
+
+            <div class="location-container">
+              <h2>London</h2>
+            </div>
           </div>
-        </div>
+
+          <div class="social-media-container">
+            <div class="statistics followers">
+              <span class="numeric-span">80K</span>
+              <span class="descriptive-span followers-span">Followers</span>
+            </div>
+
+            <div class="statistics likes">
+              <span class="numeric-span">803K</span>
+              <span class="descriptive-span">Likes</span>
+            </div>
+
+            <div class="statistics photos">
+              <span class="numeric-span">1.4K</span>
+              <span class="descriptive-span">Photos</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Leo</a>.
       </div>
 
     </div>
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Leo</a>.
-    </div>
-
-  </div>
-
-  
-
-</body>
+  </body>
 </html>
